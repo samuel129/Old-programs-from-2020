@@ -1,3 +1,9 @@
+// ConsoleApplication2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include "pch.h"
+#include <iostream>
+
 //Solutions to the quadratic equation Ax^2 + Bx + C = 0 may be calculated using the quadratic formulas:
 
 // x = (-B + (B^2-4AC)^1/2)/2A or x = (-B -(B^2 -4AC)^1/2)/2A
@@ -14,33 +20,38 @@
 // have to take appropriate steps to give imaginary results in te form shown. Just remember that every imaginary number is really
 // determined by a pair of real numbers.
 
-#include <iostream>
-
 using namespace std;
 
 int main()
 {
 	double discriminant;
-	int a;
+	int num;
+	int a = 0;
 	int b;
 	int c;
 	double result;
-while(a != 0){
-	cout << "Please enter an integer value for A.";
-	cin >> a;
-	if (a == 0){
-		cout << "Please enter a non-zero value for A!";
+		cout << "Please enter an integer value for A.\n";
+		cin >> a;
+	while (a == 0) {
+		if (a == 0) {
+			cout << "Please enter a non-zero value for A!\n";
+			cin >> a;
+		}
 	}
-}
-	cout << "Please enter an integer value for B.";
+	cout << "Please enter an integer value for B.\n";
 	cin >> b;
-	cout << "Please enter an integer value for C.";
+	cout << "Please enter an integer value for C.\n";
 	cin >> c;
 
-	discriminant = ((b**2) - (4*a*c));
-	if (discriminant > 0){
-		
+	discriminant = (pow(b,2) - (4 * (a*c)));
+	if (discriminant > 0) {
+		num = 2
 	}
-    return 0;
+	if else(discriminant < 0) {
+		num = 2
+	}
+	if else(discriminant == 0) {
+		num = 1
+	}
+	return 0;
 }
-
