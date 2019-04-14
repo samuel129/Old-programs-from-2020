@@ -20,9 +20,27 @@ using namespace std;
 
 int main()
 {
-    cout<<"Hello World";
-    discriminant = cin << 
+	double discriminant;
+	int a;
+	int b;
+	int c;
+	double result;
+while(a != 0){
+	cout << "Please enter an integer value for A.";
+	cin >> a;
+	if (a == 0){
+		cout << "Please enter a non-zero value for A!";
+	}
+}
+	cout << "Please enter an integer value for B.";
+	cin >> b;
+	cout << "Please enter an integer value for C.";
+	cin >> c;
 
+	discriminant = ((b**2) - (4*a*c));
+	if (discriminant > 0){
+		
+	}
     return 0;
 }
 
